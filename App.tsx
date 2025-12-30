@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import DrawingCanvas from './components/DrawingCanvas';
 import ColorPalette from './components/ColorPalette';
 import AIPrompt from './components/AIPrompt';
@@ -19,6 +20,7 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen pb-20 px-4 md:px-8">
+      <SpeedInsights />
       {/* Header */}
       <header className="py-8 text-center space-y-2">
         <h1 className="text-5xl md:text-6xl font-black text-blue-600 drop-shadow-md">
